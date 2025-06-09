@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Estudiantes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icono.png" type="image.png"
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <div class="logo-shape">
+                <span>B</span>
+            </div>
+        </div>
+        <div class="title-container">
+            <h1>Port BIT-10</h1>
+        </div>
+        <p class="intro-text">
+            En esta página se muestra la información de cada uno de los estudiantes que formamos parte del
+            bootcamp de Desarrollo Web en el instituto BIT
+        </p>
+    </header>
+
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="search" class="search-input" placeholder="Buscar por nombre...">
+        </div>
+        <div class="filters">
+            <button class="filter-btn" data-filter="all">MOSTRAR TODOS</button>
+            <button class="filter-btn" data-filter="300">INTENSIDAD 300</button>
+            <button class="filter-btn" data-filter="400">INTENSIDAD 400</button>
+            <div class="dropdown">
+                <button class="filter-btn">RANKING PROMEDIO</button>
+                <div class="dropdown-content">
+                    <a href="#" data-sort="desc">Mayor a Menor</a>
+                    <a href="#" data-sort="asc">Menor a Mayor</a>
+                </div>
+            </div>
+        </div>
+        <div id="student-cards" class="grid-container">
+            </div>
+    </div>
+
+    <div id="student-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <p>Portafolio de Estudiantes del Bootcamp BIT-10 &copy; 2025</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
