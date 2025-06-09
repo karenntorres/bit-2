@@ -11,8 +11,8 @@ Este es mi proyecto para el curso de programación web. Se trata de una página 
 - 🗓 Fecha límite: **Martes, 3 de Junio de 2025** // 
 - 📌 Canal de entrega: `#3-entrega-calificable` en Discord
 - ✍️ Nombre completo: Karenn Dayana Carreño Torres
-- 🔗 GitHub Pages: [https://usuario.github.io/bit-2](https://usuario.github.io/bit-2)
-- 🔗 Repositorio: [https://github.com/usuario/bit-2](https://github.com/usuario/bit-2)
+- 🔗 GitHub Pages: [https://karenntorres.github.io/bit-2/]
+- 🔗 Repositorio: [https://github.com/karenntorres/bit-2]
 
 ---
 

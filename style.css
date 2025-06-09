@@ -2,23 +2,22 @@
 /* ====== ESTILOS GENERALES Y DE FONDO ====== */
 /* ======================================= */
 body {
-    background-color: #fce4ec; /* Fondo  */
-    color: #4e3440; /* Texto 
+    background-color: #ffffff; /* Blanco */
+    color: #111; /* Negro suave */
     font-family: 'Nunito', sans-serif;
     padding: 2rem;
-    /* Cuadrícula de fondo suave y rosada */
     background-image:
-        linear-gradient(rgba(255, 128, 171, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 128, 171, 0.1) 1px, transparent 1px);
+        linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
     background-size: 40px 40px;
 }
 
 strong {
-    color: #c2185b;
+    color: #ff6f00; /* Naranja fuerte */
     font-weight: 700;
 }
 
-/* ====== ESTILOS PARA EL ENCABEZADO ====== */
+/* ====== ENCABEZADO ====== */
 
 .main-header {
     width: 100%;
@@ -34,24 +33,22 @@ strong {
 .logo-shape {
     width: 100px;
     height: 100px;
-    color: #fff;
     font-size: 4rem;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 50%;
     margin: auto;
     padding: 10px;
-    background-clip: content-box;
+    background-color: #111;
+    color: #fff;
     border: 10px solid #fff;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 10px 20px rgba(236, 64, 122, 0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .logo-shape span {
-    background-color: #ff80ab;
+    background-color: #2e7d32; /* Verde fuerte */
     width: 100%;
     height: 100%;
     display: flex;
@@ -62,17 +59,17 @@ strong {
 
 .title-container {
     display: inline-block;
-    border: 2px solid #ff80ab;
+    border: 2px solid #2e7d32;
     padding: 0.8rem 2.5rem;
     border-radius: 25px;
     margin-bottom: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 15px rgba(255, 128, 171, 0.3);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(46, 125, 50, 0.1);
 }
 
 .title-container h1 {
     font-size: 1.8rem;
-    color: #c2185b;
+    color: #2e7d32;
     margin: 0;
 }
 
@@ -82,7 +79,7 @@ strong {
     max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.02);
     border-radius: 15px;
 }
 
@@ -104,17 +101,17 @@ strong {
 
 .search-input {
     background-color: #fff;
-    border: 2px solid #ff80ab;
+    border: 2px solid #2e7d32;
     border-radius: 25px;
     padding: 10px 20px;
-    color: #4e3440;
+    color: #111;
     font-size: 1rem;
     width: 300px;
-    box-shadow: 0 0 10px rgba(255, 128, 171, 0.3);
+    box-shadow: 0 0 10px rgba(46, 125, 50, 0.1);
 }
 
 .search-input::placeholder {
-    color: #c1a5b4;
+    color: #888;
 }
 
 .filters {
@@ -127,20 +124,19 @@ strong {
 
 .filter-btn {
     background-color: #fff;
-    border: 2px solid #ff80ab;
-    color: #ff80ab;
+    border: 2px solid #ff6f00;
+    color: #ff6f00;
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: bold;
-    font-family: 'Nunito', sans-serif;
 }
 
 .filter-btn:hover, .filter-btn:focus {
-    background-color: #ff80ab;
+    background-color: #ff6f00;
     color: #fff;
-    box-shadow: 0 0 15px rgba(255, 128, 171, 0.5);
+    box-shadow: 0 0 15px rgba(255, 111, 0, 0.2);
 }
 
 .dropdown {
@@ -152,7 +148,7 @@ strong {
     display: none;
     position: absolute;
     background-color: #fff;
-    border: 2px solid #ff80ab;
+    border: 2px solid #2e7d32;
     min-width: 160px;
     z-index: 1;
     border-radius: 10px;
@@ -160,14 +156,14 @@ strong {
 }
 
 .dropdown-content a {
-    color: #ff80ab;
+    color: #2e7d32;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #ff80ab;
+    background-color: #2e7d32;
     color: #fff;
 }
 
@@ -186,32 +182,27 @@ strong {
 }
 
 .student-card {
-    background-color: #ffffff;
-    border: 2px solid #f8bbd0;
+    background-color: #fff;
+    border: 2px solid #ccc;
     border-radius: 20px;
     padding: 1.5rem;
     text-align: center;
-    box-shadow: 0 10px 20px rgba(236, 64, 122, 0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
-    cursor: pointer; /* Cursor con efecto */
+    cursor: pointer;
     animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
 }
 
 .student-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(236, 64, 122, 0.2);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
 }
 
 .student-photo {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 4px solid #ffc1e3;
+    border: 4px solid #2e7d32;
     margin-bottom: 1rem;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -221,9 +212,9 @@ strong {
     font-size: 1.3rem;
     font-weight: bold;
     margin: 0.5rem 0;
-    color: #ad1457;
+    color: #2e7d32;
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid #f8bbd0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .student-info p {
@@ -232,7 +223,7 @@ strong {
 }
 
 .github-btn {
-    background: linear-gradient(45deg, #ff80ab, #f06292);
+    background: linear-gradient(45deg, #2e7d32, #ff6f00);
     border: none;
     color: #fff;
     padding: 12px 25px;
@@ -243,15 +234,16 @@ strong {
     text-decoration: none;
     display: inline-block;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 128, 171, 0.4);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .github-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(255, 128, 171, 0.6);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-/* ====== ETIQUETAS DE HABILIDADES (SKILLS) ====== */
+
+/* ====== SKILLS ====== */
 
 .skills-container {
     padding: 0.5rem 0;
@@ -260,8 +252,8 @@ strong {
 
 .skill-tag {
     display: inline-block;
-    background-color: #fce4ec;
-    color: #c2185b;
+    background-color: #e8f5e9;
+    color: #2e7d32;
     padding: 5px 10px;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -270,10 +262,10 @@ strong {
 }
 
 
-/* ====== VENTANA MODAL ====== */
+/* ====== MODAL ====== */
 
 .modal {
-    display: none; /* Oculta por defecto */
+    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -289,7 +281,7 @@ strong {
     background-color: #fff;
     margin: 10% auto;
     padding: 30px;
-    border: 1px solid #f8bbd0;
+    border: 1px solid #ddd;
     width: 80%;
     max-width: 600px;
     border-radius: 20px;
@@ -299,7 +291,7 @@ strong {
 }
 
 .close-button {
-    color: #aaa;
+    color: #888;
     position: absolute;
     top: 15px;
     right: 25px;
@@ -310,7 +302,7 @@ strong {
 
 .close-button:hover,
 .close-button:focus {
-    color: #c2185b;
+    color: #111;
 }
 
 #modal-body .student-name {
@@ -324,13 +316,13 @@ strong {
 }
 
 
-/* ====== PIE DE PÁGINA (FOOTER) ====== */
+/* ====== PIE DE PÁGINA ====== */
 
 .main-footer {
     width: 100%;
     text-align: center;
     padding: 2rem 0;
     margin-top: 2rem;
-    border-top: 1px solid rgba(255, 128, 171, 0.2);
-    color: #ad1457;
+    border-top: 1px solid #ccc;
+    color: #333;
 }
